@@ -1,0 +1,126 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Fuggles&family=Open+Sans:wght@300&family=Pacifico&family=Poppins:ital,wght@0,500;1,100;1,300;1,400;1,500;1,600&family=Recursive&display=swap');
+  /* font-family: 'Fuggles', cursive;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Pacifico', cursive;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Recursive', sans-serif; */
+  *{
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  body{
+    background-color: rgb(20,20,20);
+    padding: 0px 50px;
+  }
+  .container{
+    padding: 50px 0px;
+    height: 100vh;
+    display: flex;
+    /* gap: 50px; */
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+  }
+.parent{
+    height: 400px;
+    width: 400px;
+    padding: 20px;
+    perspective: 1000px;
+}
+.card{
+  padding-top: 100px;
+  transform-style:preserve-3d ;
+  background-image: url(./img/Stars-NGC-290-Hubble-Space-Telescope.webp);
+  background-position: center center;
+
+
+  width: 100%;
+  
+  transition: all 0.5s ease-in-out;
+  border-radius: 10px;
+  
+}
+.card:hover{
+  background-position: 80% 20%;
+  transform: rotate3d(0.5,1,0,30deg);
+}
+.content-box{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.811);
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 2px 6px 113px 4px rgba(44,152,230,0.66);
+  -webkit-box-shadow: 2px 6px 113px 4px rgba(44,152,230,0.66);
+  -moz-box-shadow: 2px 6px 113px 4px rgba(44,152,230,0.66);
+transition: all 0.5s ease-in-out;
+padding: 50px 25px 25px 25px;
+transform-style:preserve-3d ;
+}
+.card-title{
+  color: #fff;
+  font-size: 25px;
+  font-weight: 900;
+  transition: all 0.5s ease-in-out;
+  transform: translate3d(0px,0px,20px);
+}
+.card-title:hover{
+  transform: translate3d(0px,0px,50px);
+  filter: drop-shadow(-15px 5px 10px #0798f2);
+}
+.card-content{
+  padding: 15px;
+  font-size: 12px;
+  color: rgb(185, 185, 185);
+  transition: all 0.5s ease-in-out;
+  transform: translate3d(0px,0px,20px);
+
+}
+.card-content:hover{
+  transform: translate3d(0px,0px,50px);
+}
+.see-more{
+  display: block;
+  font-weight: 900;
+  font-size: 11px;
+  text-transform: uppercase;
+  color: rgb(0,136,255);
+  padding-top: 15px;
+  transition: all 0.5s ease-in-out;
+  transform: translate3d(0px,0px,20px);
+}
+.see-more:hover{
+  transform: translate3d(0px,0px,50px);
+  filter: drop-shadow(-10px 3px 6px #2e82ff);
+}
+.date-box{
+  font-weight: 50;
+  position: absolute;
+  top: 75px;
+  left: 25px;
+  height: 60px;
+  width: 60px;
+  background-color: black;
+  border-radius: 10px;
+  padding: 12px;
+  box-shadow: -10px 11px 13px 0px rgba(32,209,227,0.71);
+-webkit-box-shadow: -10px 11px 13px 0px rgba(32,209,227,0.71);
+-moz-box-shadow: -10px 11px 13px 0px rgba(32,209,227,0.71);
+transform: translate3d(0px,0px,50px);
+}
+.date-box span{
+  display: block;
+  text-align: center;
+}
+.date-box .month{
+  color: white;
+  font-size: 12px;
+  font-weight: 50;
+}
+.date-box .date{
+  font-size: 19px;
+  font-weight: 900;
+  color: rgb(0,136,255);
+}
